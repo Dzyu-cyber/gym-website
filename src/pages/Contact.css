@@ -1,0 +1,307 @@
+.page-hero {
+  position: relative;
+  padding: 180px 0 100px;
+  overflow: hidden;
+}
+
+.contact-hero {
+  background: linear-gradient(135deg, #0a0a0a 0%, #0a001a 100%);
+}
+
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: url('/hero-bg.png') center/cover no-repeat;
+  opacity: 0.08;
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* ── Quick Contact Bar ── */
+.quick-contact-bar {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+  background: var(--primary-light);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.quick-btn {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 28px 32px;
+  transition: var(--transition);
+  border-right: 1px solid rgba(255,255,255,0.07);
+  color: white;
+}
+
+.quick-btn:last-child {
+  border-right: none;
+}
+
+.quick-btn:hover {
+  background: rgba(255,255,255,0.04);
+}
+
+.whatsapp-quick { color: #25D366; }
+.whatsapp-quick:hover { background: rgba(37, 211, 102, 0.08) !important; }
+.phone-quick:hover { background: rgba(255, 51, 0, 0.08) !important; }
+.insta-quick { color: #E1306C; }
+.insta-quick:hover { background: rgba(225, 48, 108, 0.08) !important; }
+
+.quick-btn strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: white;
+}
+
+.quick-btn span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ── Contact Grid ── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* ── Form ── */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  color: white;
+  padding: 14px 18px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  outline: none;
+  transition: var(--transition);
+  resize: vertical;
+  appearance: none;
+}
+
+.form-group select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23a3a3a3' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 44px;
+  cursor: pointer;
+}
+
+.form-group select option {
+  background: #1a1a1a;
+  color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--accent);
+  background: rgba(255, 51, 0, 0.05);
+  box-shadow: 0 0 0 3px rgba(255, 51, 0, 0.15);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255,255,255,0.3);
+}
+
+.success-msg {
+  text-align: center;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.success-msg h3 {
+  font-size: 1.8rem;
+}
+
+.success-msg p {
+  color: var(--text-muted);
+  max-width: 400px;
+}
+
+/* ── Info Card ── */
+.info-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px;
+  padding: 36px;
+  margin-bottom: 24px;
+}
+
+.info-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.info-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.info-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 51, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-item strong {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.info-item a,
+.info-item span {
+  color: white;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.info-item a:hover {
+  color: var(--accent);
+}
+
+/* ── Map ── */
+.map-wrap {
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  border: 1px solid rgba(255,255,255,0.07);
+}
+
+.google-map {
+  width: 100%;
+  height: 220px;
+  border: none;
+  display: block;
+  filter: invert(90%) hue-rotate(180deg);
+}
+
+/* ── WA CTA Block ── */
+.wa-cta-block {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: rgba(37, 211, 102, 0.1);
+  border: 1px solid rgba(37, 211, 102, 0.3);
+  border-radius: 12px;
+  padding: 22px 24px;
+  color: #25D366;
+  transition: var(--transition);
+}
+
+.wa-cta-block:hover {
+  background: rgba(37, 211, 102, 0.15);
+  transform: translateY(-2px);
+}
+
+.wa-cta-block strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+  color: white;
+}
+
+.wa-cta-block p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .quick-btn {
+    min-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .quick-btn:last-child {
+    border-bottom: none;
+  }
+}

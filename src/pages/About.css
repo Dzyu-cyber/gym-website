@@ -1,0 +1,239 @@
+.page-hero {
+  position: relative;
+  padding: 180px 0 100px;
+  background: var(--primary-light);
+  overflow: hidden;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, #0a0a0a 0%, #001a0a 100%);
+}
+
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: url('/hero-bg.png') center/cover no-repeat;
+  opacity: 0.08;
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* ── Story ── */
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-img-wrap {
+  position: relative;
+}
+
+.about-trainer-img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  max-height: 600px;
+}
+
+.about-exp-badge {
+  position: absolute;
+  top: 30px;
+  right: -20px;
+  background: var(--accent);
+  color: white;
+  border-radius: 12px;
+  padding: 20px 24px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(255,51,0,0.4);
+}
+
+.badge-number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 900;
+  color: white !important;
+  line-height: 1;
+}
+
+.badge-text {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+}
+
+.about-story-col p {
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+
+.about-story-col p strong,
+.about-story-col p em {
+  color: var(--secondary);
+}
+
+/* ── Certs ── */
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.cert-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 30px 24px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.cert-card:hover {
+  border-color: rgba(255,51,0,0.3);
+  transform: translateY(-4px);
+}
+
+.cert-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.cert-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.cert-card p {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+/* ── Values ── */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.value-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 36px;
+  transition: var(--transition);
+}
+
+.value-card:hover {
+  border-color: rgba(255,51,0,0.3);
+  background: rgba(255,51,0,0.04);
+  transform: translateY(-4px);
+}
+
+.value-icon {
+  margin-bottom: 16px;
+}
+
+.value-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  color: var(--text-muted);
+}
+
+/* ── Mission ── */
+.mission-section {
+  background: var(--accent);
+  padding: 100px 0;
+}
+
+.mission-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mission-inner .section-tag {
+  color: rgba(0,0,0,0.7);
+}
+
+.mission-inner p {
+  color: rgba(255,255,255,0.85);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.mission-cta {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background: #25D366;
+  color: white;
+  border-radius: 4px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-whatsapp:hover {
+  background: #128C7E;
+  transform: translateY(-2px);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1024px) {
+  .about-story-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .about-exp-badge {
+    right: 10px;
+    top: 10px;
+  }
+  .certs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+}
