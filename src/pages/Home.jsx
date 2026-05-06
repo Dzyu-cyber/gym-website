@@ -86,13 +86,13 @@ export default function Home() {
             Helping people achieve real fitness transformations through expert coaching, structured programs, and <strong>proven results</strong>.
           </p>
           <div className="hero-cta reveal">
-            <Link to="/contact" className="btn btn-primary btn-sm">
-              Book Free Consultation <ArrowRight size={18} />
+            <Link to="/contact" className="btn btn-primary btn-lg">
+              Book Free Consultation <ArrowRight size={22} />
             </Link>
-            <a href="https://wa.me/919553722793" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
-              <MessageCircle size={18} /> WhatsApp Now
+            <a href="https://wa.me/919553722793" className="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+              <MessageCircle size={22} /> WhatsApp Now
             </a>
-            <Link to="/transformations" className="btn btn-outline btn-sm">
+            <Link to="/transformations" className="btn btn-outline btn-lg">
               View Transformations
             </Link>
           </div>
@@ -244,22 +244,9 @@ export default function Home() {
           <span className="section-tag reveal">Limited Spots Available</span>
           <h2 className="cta-title reveal">Your Transformation <span className="text-accent">Starts Today</span></h2>
           <p className="cta-subtitle reveal">Stop waiting. Every week you delay is a week behind. Book your free consultation and let's build your transformation plan.</p>
-          <div className="cta-buttons reveal">
-            <Link to="/contact" className="btn btn-primary">Book Free Consultation <ArrowRight size={20} /></Link>
-            <a href="https://wa.me/919553722793" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
-              <MessageCircle size={20} /> WhatsApp Now
-            </a>
-          </div>
         </div>
       </section>
 
-      {/* Mobile sticky CTA */}
-      <div className="mobile-sticky-cta">
-        <Link to="/contact" className="btn btn-primary" style={{ flex: 1 }}>Book Now</Link>
-        <a href="https://wa.me/919553722793" className="btn btn-whatsapp" style={{ flex: 1 }} target="_blank" rel="noopener noreferrer">
-          <MessageCircle size={18} /> WhatsApp
-        </a>
-      </div>
     </main>
   );
 }

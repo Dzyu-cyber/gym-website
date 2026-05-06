@@ -163,6 +163,25 @@
   text-align: center;
 }
 
+.mission-title {
+  color: white !important;
+  font-size: clamp(1.8rem, 8vw, 3.8rem);
+  line-height: 1.2;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.mission-title .text-black {
+  color: var(--text-dark);
+}
+
+@media (max-width: 480px) {
+  .shrink-word {
+    font-size: 0.85em;
+    letter-spacing: -1.5px;
+  }
+}
+
 .mission-inner .section-tag {
   color: rgba(0,0,0,0.7);
 }
@@ -221,8 +240,16 @@
     gap: 50px;
   }
   .about-exp-badge {
-    right: 10px;
-    top: 10px;
+    right: 20px;
+    bottom: 20px;
+    top: auto;
+    padding: 12px 18px;
+  }
+  .badge-number {
+    font-size: 2rem;
+  }
+  .badge-text {
+    font-size: 0.7rem;
   }
   .certs-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -235,5 +262,17 @@
   }
   .certs-grid {
     grid-template-columns: 1fr;
+  }
+  .about-exp-badge {
+    right: 15px;
+    bottom: 15px;
+    padding: 8px 12px;
+  }
+  .badge-number {
+    font-size: 1.5rem;
+  }
+  .badge-text {
+    font-size: 0.6rem;
+    line-height: 1.2;
   }
 }

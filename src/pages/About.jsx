@@ -122,9 +122,8 @@ export default function About() {
         <div className="container">
           <div className="mission-inner reveal">
             <span className="section-tag">My Mission</span>
-            <h2 className="section-title" style={{ color: 'white' }}>
-              To Make <span style={{ color: '#000' }}>Fitness Transformation</span><br />
-              Accessible to <span style={{ color: '#000' }}>Everyone</span>
+            <h2 className="section-title mission-title">
+              To Make <span className="text-black">Fitness <span className="shrink-word">Transformation</span></span> Accessible to <span className="text-black">Everyone</span>
             </h2>
             <p>
               I believe every person deserves to experience what it feels like to be strong, lean, and confident. Not just athletes. Not just people with good genetics. Everyone.

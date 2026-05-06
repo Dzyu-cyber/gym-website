@@ -92,13 +92,11 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 12px 28px;
   background: #25D366;
   color: white;
   border-radius: 4px;
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
@@ -571,8 +569,8 @@
   .hero-cta .btn-primary,
   .hero-cta .btn-whatsapp {
     width: 100% !important;
-    padding: 8px 16px !important;
-    font-size: 0.8rem !important;
+    padding: 14px 24px !important;
+    font-size: 1rem !important;
     min-height: 0 !important;
     height: auto !important;
   }

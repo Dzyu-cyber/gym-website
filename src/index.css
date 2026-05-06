@@ -73,6 +73,10 @@ img {
   color: var(--accent);
 }
 
+.text-dark, .text-black {
+  color: var(--text-dark);
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
@@ -94,6 +98,11 @@ img {
 .btn-sm {
   padding: 12px 28px;
   font-size: 0.95rem;
+}
+
+.btn-lg {
+  padding: 18px 42px;
+  font-size: 1.25rem;
 }
 
 .btn-primary {

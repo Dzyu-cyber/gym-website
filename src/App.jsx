@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
 import Home from './pages/Home';
 import Programs from './pages/Programs';
 import About from './pages/About';
@@ -20,7 +19,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-      <WhatsAppButton />
     </Router>
   );
 }
