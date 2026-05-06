@@ -140,7 +140,7 @@ export default function Programs() {
         <div className="page-hero-overlay" />
         <div className="container page-hero-content text-center">
           <span className="section-tag reveal">Engineered for Results</span>
-          <h1 className="section-title reveal" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}>
+          <h1 className="section-title reveal" style={{ fontSize: 'clamp(2rem, 5vw, 4rem)' }}>
             Choose Your <span className="text-accent">Program</span>
           </h1>
           <p className="section-subtitle reveal">
@@ -195,7 +195,7 @@ export default function Programs() {
           <p className="section-subtitle reveal">Book a free 30-minute call with the coach. We'll assess your goals and recommend the perfect program for you.</p>
           <div className="reveal" style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
             <Link to="/contact" className="btn btn-primary">Book Free Call <ArrowRight size={20} /></Link>
-            <a href="https://wa.me/15551234567" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/919553722793" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
               <MessageCircle size={20} /> WhatsApp Now
             </a>
           </div>

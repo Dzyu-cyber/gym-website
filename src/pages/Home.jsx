@@ -71,27 +71,28 @@ export default function Home() {
         <div className="hero-overlay" />
         <img src="/hero-bg.png" alt="IronCore Fitness gym" className="hero-bg-img" />
         <div className="container hero-content">
-          <div className="hero-badge reveal">
-            <Trophy size={16} className="text-accent" />
-            <span>500+ Client Transformations</span>
-          </div>
           <h1 className="hero-title reveal">
-            Build Strength.<br />
+            <span className="hero-title-first-line">
+              Build Strength.
+              <span className="hero-badge badge-inline">
+                <Trophy size={14} className="text-accent" />
+                <span>500+ Client Transformations</span>
+              </span>
+            </span><br />
             <span className="text-accent">Burn Fat.</span><br />
             Transform Your Life.
           </h1>
           <p className="hero-subtitle reveal">
-            Helping people achieve real fitness transformations through expert coaching,<br />
-            structured programs, and <strong>proven results</strong>.
+            Helping people achieve real fitness transformations through expert coaching, structured programs, and <strong>proven results</strong>.
           </p>
           <div className="hero-cta reveal">
-            <Link to="/contact" className="btn btn-primary">
-              Book Free Consultation <ArrowRight size={20} />
+            <Link to="/contact" className="btn btn-primary btn-sm">
+              Book Free Consultation <ArrowRight size={18} />
             </Link>
-            <a href="https://wa.me/15551234567" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
-              <MessageCircle size={20} /> WhatsApp Now
+            <a href="https://wa.me/919553722793" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+              <MessageCircle size={18} /> WhatsApp Now
             </a>
-            <Link to="/transformations" className="btn btn-outline">
+            <Link to="/transformations" className="btn btn-outline btn-sm">
               View Transformations
             </Link>
           </div>
@@ -245,7 +246,7 @@ export default function Home() {
           <p className="cta-subtitle reveal">Stop waiting. Every week you delay is a week behind. Book your free consultation and let's build your transformation plan.</p>
           <div className="cta-buttons reveal">
             <Link to="/contact" className="btn btn-primary">Book Free Consultation <ArrowRight size={20} /></Link>
-            <a href="https://wa.me/15551234567" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/919553722793" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
               <MessageCircle size={20} /> WhatsApp Now
             </a>
           </div>
@@ -255,7 +256,7 @@ export default function Home() {
       {/* Mobile sticky CTA */}
       <div className="mobile-sticky-cta">
         <Link to="/contact" className="btn btn-primary" style={{ flex: 1 }}>Book Now</Link>
-        <a href="https://wa.me/15551234567" className="btn btn-whatsapp" style={{ flex: 1 }} target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/919553722793" className="btn btn-whatsapp" style={{ flex: 1 }} target="_blank" rel="noopener noreferrer">
           <MessageCircle size={18} /> WhatsApp
         </a>
       </div>

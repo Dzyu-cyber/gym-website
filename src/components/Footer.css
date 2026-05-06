@@ -19,7 +19,12 @@
   font-weight: 900;
   letter-spacing: 1px;
   margin-bottom: 20px;
-  display: inline-flex;
+}
+
+.footer-logo-img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
 }
 
 .footer-desc {

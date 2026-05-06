@@ -5,8 +5,8 @@
   --primary-light: #1a1a1a;
   --secondary: #ffffff;
   --secondary-muted: #e5e5e5;
-  --accent: #ff3300;
-  --accent-hover: #cc2900;
+  --accent: #facc15;
+  --accent-hover: #eab308;
   
   --text-main: #ffffff;
   --text-muted: #a3a3a3;
@@ -91,6 +91,11 @@ img {
   gap: 8px;
 }
 
+.btn-sm {
+  padding: 12px 28px;
+  font-size: 0.95rem;
+}
+
 .btn-primary {
   background-color: var(--accent);
   color: var(--secondary);
@@ -99,7 +104,7 @@ img {
 .btn-primary:hover {
   background-color: var(--accent-hover);
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(255, 51, 0, 0.3);
+  box-shadow: 0 10px 20px rgba(250, 204, 21, 0.3);
 }
 
 .btn-outline {

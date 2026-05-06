@@ -52,7 +52,7 @@
 
 .whatsapp-quick { color: #25D366; }
 .whatsapp-quick:hover { background: rgba(37, 211, 102, 0.08) !important; }
-.phone-quick:hover { background: rgba(255, 51, 0, 0.08) !important; }
+.phone-quick:hover { background: rgba(250, 204, 21, 0.08) !important; }
 .insta-quick { color: #E1306C; }
 .insta-quick:hover { background: rgba(225, 48, 108, 0.08) !important; }
 
@@ -136,8 +136,8 @@
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: var(--accent);
-  background: rgba(255, 51, 0, 0.05);
-  box-shadow: 0 0 0 3px rgba(255, 51, 0, 0.15);
+  background: rgba(250, 204, 21, 0.05);
+  box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.15);
 }
 
 .form-group input::placeholder,
@@ -202,7 +202,7 @@
   flex-shrink: 0;
   width: 44px;
   height: 44px;
-  background: rgba(255, 51, 0, 0.1);
+  background: rgba(250, 204, 21, 0.1);
   border-radius: 10px;
   display: flex;
   align-items: center;

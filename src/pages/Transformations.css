@@ -74,7 +74,7 @@
 }
 
 .transform-big-card:hover {
-  border-color: rgba(255,51,0,0.3);
+  border-color: rgba(250, 204, 21, 0.3);
   transform: translateY(-4px);
   box-shadow: 0 20px 50px rgba(0,0,0,0.3);
 }

@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer-grid">
           <div className="footer-col">
             <Link to="/" className="footer-logo">
-              <Dumbbell className="logo-icon" />
+              <img src="/logo.png" alt="IronCore Fitness Logo" className="footer-logo-img" />
               <span>IRON<span className="text-accent">CORE</span></span>
             </Link>
             <p className="footer-desc">
@@ -57,7 +57,7 @@ const Footer = () => {
             <h3 className="footer-title">Contact Info</h3>
             <ul className="contact-info">
               <li><MapPin size={18} className="text-accent" /> <span>123 Fitness Ave, Gym City</span></li>
-              <li><Phone size={18} className="text-accent" /> <span>+1 (555) 123-4567</span></li>
+              <li><Phone size={18} className="text-accent" /> <span>+91 95537 22793</span></li>
               <li><Mail size={18} className="text-accent" /> <span>coach@ironcore.fitness</span></li>
             </ul>
           </div>

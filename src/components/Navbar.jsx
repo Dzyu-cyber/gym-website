@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
         <Link to="/" className="nav-logo">
-          <Dumbbell className="logo-icon" />
+          <img src="/logo.png" alt="IronCore Fitness Logo" className="nav-logo-img" />
           <span>IRON<span className="text-accent">CORE</span></span>
         </Link>
 

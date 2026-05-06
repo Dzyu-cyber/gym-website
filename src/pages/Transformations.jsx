@@ -82,7 +82,7 @@ export default function Transformations() {
         <div className="page-hero-overlay" />
         <div className="container page-hero-content text-center">
           <span className="section-tag reveal">Real Results. Real People.</span>
-          <h1 className="section-title reveal" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}>
+          <h1 className="section-title reveal" style={{ fontSize: 'clamp(2rem, 5vw, 4rem)' }}>
             Client <span className="text-accent">Transformations</span>
           </h1>
           <p className="section-subtitle reveal">
@@ -136,7 +136,7 @@ export default function Transformations() {
           </p>
           <div className="reveal" style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
             <Link to="/contact" className="btn btn-primary">Book Free Consultation <ArrowRight size={20} /></Link>
-            <a href="https://wa.me/15551234567" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/919553722793" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
               <MessageCircle size={20} /> WhatsApp Now
             </a>
           </div>

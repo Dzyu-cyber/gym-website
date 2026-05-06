@@ -37,7 +37,7 @@ export default function About() {
         <div className="page-hero-overlay" />
         <div className="container page-hero-content text-center">
           <span className="section-tag reveal">Your Coach</span>
-          <h1 className="section-title reveal" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}>
+          <h1 className="section-title reveal" style={{ fontSize: 'clamp(2rem, 5vw, 4rem)' }}>
             Meet the <span className="text-accent">Coach</span>
           </h1>
           <p className="section-subtitle reveal">
@@ -133,7 +133,7 @@ export default function About() {
               <Link to="/contact" className="btn" style={{ background: '#000', color: '#fff' }}>
                 Book Free Consultation <ArrowRight size={20} />
               </Link>
-              <a href="https://wa.me/15551234567" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/919553722793" className="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
                 <MessageCircle size={20} /> WhatsApp Me
               </a>
             </div>

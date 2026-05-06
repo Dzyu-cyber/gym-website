@@ -30,6 +30,10 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const message = `*New Booking Request*%0A%0A*Name:* ${form.name}%0A*Phone:* ${form.phone}%0A*Email:* ${form.email}%0A*Goal:* ${form.goal}%0A*Message:* ${form.message}`;
+    const whatsappUrl = `https://wa.me/919553722793?text=${message}`;
+    
+    window.open(whatsappUrl, '_blank');
     setSubmitted(true);
   };
 
@@ -40,7 +44,7 @@ export default function Contact() {
         <div className="page-hero-overlay" />
         <div className="container page-hero-content text-center">
           <span className="section-tag reveal">Let's Get Started</span>
-          <h1 className="section-title reveal" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}>
+          <h1 className="section-title reveal" style={{ fontSize: 'clamp(2rem, 5vw, 4rem)' }}>
             Book Your <span className="text-accent">Free Consultation</span>
           </h1>
           <p className="section-subtitle reveal">
@@ -51,18 +55,18 @@ export default function Contact() {
 
       {/* ── Quick Contact Buttons ── */}
       <div className="quick-contact-bar reveal">
-        <a href="https://wa.me/15551234567" className="quick-btn whatsapp-quick" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/919553722793" className="quick-btn whatsapp-quick" target="_blank" rel="noopener noreferrer">
           <MessageCircle size={22} />
           <div>
             <strong>WhatsApp</strong>
             <span>Chat instantly</span>
           </div>
         </a>
-        <a href="tel:+15551234567" className="quick-btn phone-quick">
+        <a href="tel:+919553722793" className="quick-btn phone-quick">
           <Phone size={22} />
           <div>
             <strong>Call Us</strong>
-            <span>+1 (555) 123-4567</span>
+            <span>+91 95537 22793</span>
           </div>
         </a>
         <a href="https://instagram.com/ironcorefitness" className="quick-btn insta-quick" target="_blank" rel="noopener noreferrer">
@@ -140,14 +144,14 @@ export default function Contact() {
                     <div className="info-icon text-accent"><Phone size={22} /></div>
                     <div>
                       <strong>Phone</strong>
-                      <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                      <a href="tel:+919553722793">+91 95537 22793</a>
                     </div>
                   </div>
                   <div className="info-item">
                     <div className="info-icon text-accent"><MessageCircle size={22} /></div>
                     <div>
                       <strong>WhatsApp</strong>
-                      <a href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer">Chat Directly</a>
+                      <a href="https://wa.me/919553722793" target="_blank" rel="noopener noreferrer">Chat Directly</a>
                     </div>
                   </div>
                   <div className="info-item">
@@ -194,7 +198,7 @@ export default function Contact() {
               </div>
 
               {/* WhatsApp CTA */}
-              <a href="https://wa.me/15551234567" className="wa-cta-block reveal" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/919553722793" className="wa-cta-block reveal" target="_blank" rel="noopener noreferrer">
                 <MessageCircle size={32} />
                 <div>
                   <strong>Prefer WhatsApp?</strong>
